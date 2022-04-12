@@ -1,8 +1,8 @@
 describe("Logs into TimeTac", () => {
   beforeAll(async () => {
     await page.goto("https://go-sandbox.timetac.com/qatest");
-    await page.type("#userName", "username");
-    await page.type("#userPass", "password");
+    await page.type("#userName", "manager");
+    await page.type("#userPass", "qa356test");
     await page.click(".LoginSubmitForm");
     await page.waitForNetworkIdle({ idleTime: 3000 });
 
